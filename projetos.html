@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#14060a" />
+  <title>Galeria de projetos | Julia Florentino Caldas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="loader" id="loader">
+    <svg viewBox="0 0 100 100" class="loader-mark" aria-hidden="true"><path pathLength="1" d="M50 10 C38 3 22 7 18 23 C15 35 22 47 24 61 C26 77 28 95 36 95 C44 95 44 75 50 75 C56 75 56 95 64 95 C72 95 74 77 76 61 C78 47 85 35 82 23 C78 7 62 3 50 10 Z" fill="none" stroke="#e2c6a8" stroke-width="2" stroke-linejoin="round"/></svg>
+    <p>Julia Florentino Caldas</p>
+  </div>
+  <div class="progress" id="progress"></div>
+
+  <header class="topbar">
+    <a href="index.html#inicio" class="brand" aria-label="Início"><span class="mono">JC</span><span class="brand-name">Julia Caldas</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Principal">
+      <a href="index.html#sobre">Sobre</a>
+      <a href="index.html#trajetoria">Trajetória</a>
+      <a href="index.html#projetos">Projetos</a>
+      <a href="projetos.html" class="on">Galeria</a>
+      <a href="index.html#atlas">Atlas</a>
+      <a href="index.html#saude-bucal">Saúde bucal</a>
+      <a href="index.html#contato">Contato</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><i></i><i></i></button>
+  </header>
+  <nav class="menu" id="menu" aria-label="Menu">
+    <a href="index.html#inicio"><small>01</small>Início</a>
+    <a href="index.html#sobre"><small>02</small>Sobre</a>
+    <a href="index.html#trajetoria"><small>03</small>Trajetória</a>
+    <a href="index.html#projetos"><small>04</small>Projetos</a>
+    <a href="index.html#atlas"><small>05</small>Atlas dental</a>
+    <a href="index.html#areas"><small>06</small>Áreas de interesse</a>
+    <a href="index.html#saude-bucal"><small>07</small>Saúde bucal</a>
+    <a href="projetos.html" style="color:var(--champ)"><small>08</small>Galeria de projetos</a>
+    <a href="index.html#contato"><small>09</small>Contato</a>
+  </nav>
+
+  <main class="gallery-page section">
+    <div class="wrap">
+      <a href="index.html#projetos" class="back reveal">← Voltar ao início</a>
+      <p class="label reveal"><span>04</span> Galeria</p>
+      <h2 class="reveal">Projetos da <em>Julia</em></h2>
+      <p class="sub reveal">Uma seleção de trabalhos acadêmicos e iniciativas desenvolvidas ao longo da graduação.</p>
+
+      <div class="gallery">
+        <!-- PROJETO 1: troque o <div class="g-box">…</div> por <div class="g-box"><img src="img/projeto1.jpg" alt="Descrição" /></div> -->
+        <a class="g-item reveal" href="#" style="--glow:#a12d4a">
+          <div class="g-sq"><div class="g-box"><span><small>Projeto 01</small>Imagem do projeto</span></div></div>
+          <h3><span>01</span>[Título do projeto 1]</h3>
+        </a>
+        <!-- PROJETO 2: troque o <div class="g-box">…</div> por <div class="g-box"><img src="img/projeto2.jpg" alt="Descrição" /></div> -->
+        <a class="g-item reveal" href="#" style="--glow:#e2c6a8">
+          <div class="g-sq"><div class="g-box"><span><small>Projeto 02</small>Imagem do projeto</span></div></div>
+          <h3><span>02</span>[Título do projeto 2]</h3>
+        </a>
+        <!-- PROJETO 3: troque o <div class="g-box">…</div> por <div class="g-box"><img src="img/projeto3.jpg" alt="Descrição" /></div> -->
+        <a class="g-item reveal" href="#" style="--glow:#d9667f">
+          <div class="g-sq"><div class="g-box"><span><small>Projeto 03</small>Imagem do projeto</span></div></div>
+          <h3><span>03</span>[Título do projeto 3]</h3>
+        </a>
+        <!-- PROJETO 4: troque o <div class="g-box">…</div> por <div class="g-box"><img src="img/projeto4.jpg" alt="Descrição" /></div> -->
+        <a class="g-item reveal" href="#" style="--glow:#7b1e34">
+          <div class="g-sq"><div class="g-box"><span><small>Projeto 04</small>Imagem do projeto</span></div></div>
+          <h3><span>04</span>[Título do projeto 4]</h3>
+        </a>
+      </div>
+      <p class="note reveal">Atenção: não publique fotos de pacientes sem autorização por escrito.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Julia Florentino Caldas · Acadêmica de Odontologia</p>
+    <p class="fine">Site de caráter pessoal e acadêmico. Não oferece serviços odontológicos nem substitui a consulta com um cirurgião-dentista.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
